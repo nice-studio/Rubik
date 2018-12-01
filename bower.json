@@ -1,0 +1,22 @@
+{
+	"name": "rubik",
+	"description": "",
+	"main": "dist/css/rubik.css",
+	"authors": [
+		"ProjectSoft <projectsoft2009@yandex.ru>"
+	],
+	"license": "ISC",
+	"homepage": "https://github.com/nice-studio/Rubik",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests",
+		"src/pug",
+		"Gruntfile.js",
+		"**/*.html",
+		"**/*.ico",
+		"**/*.json"
+	]
+}
