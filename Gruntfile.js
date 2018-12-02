@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 	var gc = {
 		fontVers: '1.0.0',
+		fn: "rubik",
 		tasks: [
 			'notify:watch',
 			'less',
@@ -17,15 +18,34 @@ module.exports = function(grunt) {
 			css: {
 				options : {
 					compress: false,
-					ieCompat: false
+					ieCompat: false,
+					modifyVars: {
+						fontpath: '"dist/fonts"'
+					}
 				},
 				files : {
 					'test/css/main.css' : [
-						'src/less/variables.less',
 						'src/less/main.less'
+					],
+					'dist/css/<%= globalConfig.fn %>.css' : [
+						'src/less/fontface.less'
 					]
 				}
-			}
+			},/*
+			dist: {
+				options : {
+					compress: false,
+					ieCompat: false,
+					modifyVars: {
+						fontpath: "dist/fonts"
+					}
+				},
+				files : {
+					'dist/css/<%= globalConfig.fn %>.css' : [
+						'src/less/fontface.less'
+					]
+				}
+			}*/
 		},
 		pug: {
 			files: {
