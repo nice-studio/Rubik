@@ -15,6 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/nice-studio/Rubik/issues"
 	},
+	"githubpage": "https://nice-studio.github.io/Rubik/",
 	"homepage": "https://github.com/nice-studio/Rubik#readme",
 	"devDependencies": {
 		"grunt": "^1.0.1",
